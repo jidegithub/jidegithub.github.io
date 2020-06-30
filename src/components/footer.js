@@ -10,8 +10,8 @@ export default function footer() {
             href="https://github.com/jidegithub"
           >
             Copyright © 2020.
-            Made with 💚 by @jidesnr
-            Powered by Gatsby
+            Made with 💚 by jide.
+            Powered by Gatsby and Tailwind css
           </a>
         </p>
       </nav>

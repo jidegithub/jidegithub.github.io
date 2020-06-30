@@ -11,10 +11,10 @@ export default function hero() {
       </div>
       <div className="whatido-grey name-font max-w-xl mt-10">
         <p className="text-xxl">
-          i prettymuch enjoy building (and occasionally designing) 
+          i pretty much enjoy building (and occasionally designing) 
           exceptional web/mobile/enterprise applications, and everything in between.
           I love studying, discovering new technologies, travelling, sightseeing, watching animes and playing video games.
-          <br/>Recently, i started <a href="/blog" className="anti-main-color">writing</a> about some challenges, tricks and discoveries about some programs i have used over time.
+          <br/>Recently, i started <a href="/blog" className="anti-main-color">writing</a> on some challenges, tricks and discoveries about some programs i have used over time.
         </p>
       </div>
     </section>

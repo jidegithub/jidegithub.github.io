@@ -142,3 +142,11 @@ li.stack-item::before{
   left: -9999px;
 }
 
+@media (max-width: 640px){
+  ul.stack-listing {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+
