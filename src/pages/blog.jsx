@@ -6,7 +6,7 @@ export default function blog() {
   return (
     <Layout>
       <SEO
-        keywords={[`olutola`, `jide`, `olutolajide`, `michael`, `olutolamichael`, `blog`, `personal blog`, ]}
+        keywords={[`olutola`, `jide`, `olutolajide`, `michael`, `olutolamichael`, `blog`, `personal blog`, `olutola jides blog`, 'olutola jide\'s blog']}
         title="Blog"
       />
 

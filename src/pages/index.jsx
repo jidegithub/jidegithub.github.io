@@ -3,9 +3,6 @@ import Hero from "../components/hero.jsx";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import AboutMe from "../components/aboutme.jsx";
-import Work from "../components/work.jsx";
-import Contact from "../components/contact.jsx";
 
 function IndexPage() {
   return (
@@ -15,9 +12,6 @@ function IndexPage() {
         title="Home"
       />
       <Hero/>
-      <AboutMe/>
-      <Work/>
-      <Contact/>
     </Layout>
   );
 }

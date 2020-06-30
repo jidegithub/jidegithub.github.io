@@ -17,16 +17,6 @@ function Header() {
     <header className="">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4 md:p-8">
         <Link className="flex items-center no-underline text-white" to="/">
-          {/* <svg
-            className="fill-current h-8 mr-2 w-8"
-            height="54"
-            viewBox="0 0 54 54"
-            width="54"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-          </svg> */}
-          {/* <span id="icon-box"><img src="../images/fire.gif" alt="logo" id="icon"/></span> */}
           <span className="font-bold text-xl tracking-tight">
             {site.siteMetadata.title}
           </span>
@@ -53,6 +43,10 @@ function Header() {
         >
           {[
             {
+              route: `/`,
+              title: `Home`
+            },
+            {
               route: `/about`,
               title: `About`
             },
@@ -61,29 +55,24 @@ function Header() {
               title: `Work`
             },
             {
-              route: `/contact`,
-              title: `Contact`
+              route: `/blog`,
+              title: `Blog`
             }
           ].map(link => (
-            <a
+            <Link
               className="block topnav-font text-sm name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
               key={link.title}
-              href={`#${link.title}`}
+              to={link.route}
+              activeClassName={`border-b-2`}
             >
               {link.title}
-            </a>
+            </Link>
           ))}
           <button
             className="py-2 px-4 btn tweet topnav-font text-sm name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 text-white"
           >
             Resume
           </button>
-          <Link
-            className="block topnav-font text-sm name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
-            to={`/blog`}
-          >
-            blog
-          </Link>
         </nav>
       </div>
     </header>
