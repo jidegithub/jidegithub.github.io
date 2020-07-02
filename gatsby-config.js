@@ -13,10 +13,10 @@ module.exports = {
         name: `olutola-olajide`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        background_color: `#0a192f`,
+        theme_color: `#0a192f`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `🚀 jide`
       }
     },
     {
