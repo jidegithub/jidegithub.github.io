@@ -7,7 +7,7 @@ function AboutPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`about olutola jide`, `olutola jide`, `olutola michael`, `about olutola michael`]}
         title="About"
       />
       <section id="About" className="min-h-screen">

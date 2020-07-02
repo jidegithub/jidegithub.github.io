@@ -22,9 +22,12 @@ export default function hero() {
         </p>
       </div>
       <div className="name-grey">
-        <button className="getintouch" href="mailto:olutolajide@gmail.com">
-          shoot me a mail
-        </button>
+        <a href="mailto:olutolajide@gmail.com">
+          <button className="getintouch" >
+            shoot me a mail
+          </button>
+        </a>
+        
         {/* or */}
         {/* <a className="tweet mx-4" href="https://www.twitter.com/@jidesnr">
           send a tweet
