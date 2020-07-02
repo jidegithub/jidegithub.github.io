@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function footer() {
   return (
-    <footer className="topnav-font">
+    <footer className="sf-mono-font">
       <nav className="flex justify-center max-w-4xl mx-auto p-4 md:p-8 text-sm">
         <p>
           <a
