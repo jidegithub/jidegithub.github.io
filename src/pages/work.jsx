@@ -1,8 +1,10 @@
 import React from 'react'
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { projects } from '../projects';
 
 export default function work() {
+  console.log(projects)
   return (
     <Layout>
       <SEO
@@ -12,152 +14,57 @@ export default function work() {
       <section id="Work" className="w-full">
         <h3 className="anti-main-color sf-mono-font font-semibold text-5xl my-10">
           Projects & Work
-          </h3>
-
+        </h3>
         <div className="container ml-auto mr-auto flex flex-wrap items-start">
-          <div className="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
-            <div className="work-blue-bg relative flex flex-col h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
-              <section className="flex justify-end">
-                <button className="hover:text-purple-900 focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
-                  </svg>
-                </button>
+          {projects.map(project => (
+            <div className="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2" key={project.name}>
+              <div className="work-blue-bg relative flex flex-col h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                <section className="flex justify-end">
+                  <a href={project.github}>
+                    <button aria-label="github link" className="hover:text-purple-900 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
+                      </svg>
+                    </button>
+                  </a>
+                  
+                  <a href={project.link}>
+                    <button aria-label="external link" className="hover:text-purple-900 focus:outline-none ml-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                        <line x1="10" y1="14" x2="20" y2="4" />
+                        <polyline points="15 4 20 4 20 9" />
+                      </svg>
+                    </button>
+                  </a>  
+                </section>
 
-                <button className="hover:text-purple-900 focus:outline-none ml-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
-                    <line x1="10" y1="14" x2="20" y2="4" />
-                    <polyline points="15 4 20 4 20 9" />
-                  </svg>
-                </button>
-              </section>
-
-              <section className="flex flex-col pt-6 p-2">
-                <div>
-                  <h5 className="text-2xl font-bold mb-10 name-grey leading-none">
-                    Car Pool
-                  </h5>
-                  <div className="mb-4 h-20 name-grey">
-                    <p>
-                      A web app for renting vehicles when in a new country
-                    </p>
+                <section className="flex flex-col pt-6 p-2">
+                  <div>
+                    <h5 className="text-2xl font-bold md:mb-6 sm:mb-4 mb-10 name-grey leading-none">
+                      {project.name}
+                    </h5>
+                    <div className="mb-2 h-20 name-grey">
+                      <p>
+                        {project.description}
+                      </p>
+                    </div>
+                    <footer className="text-xs md:pt-4 sf-mono-font leading-none whatido-grey">
+                      <ul className="flex flex-wrap md:leading-relaxed">
+                        {project.stack.map(stack => (
+                          <li className="pr-2 sm:leading-relaxed" key={stack}>{stack}</li>
+                        ))}
+                      </ul>
+                    </footer>
                   </div>
-                  <footer className="text-xs sf-mono-font leading-none whatido-grey">Vue  Express.js  Node.js  Tailwind.css</footer>
-                </div>
-              </section>
+                </section>
+              </div>
             </div>
-          </div>
+          ))}
 
-          <div className="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
-            <div className="work-blue-bg relative flex flex-col h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
-              <section className="flex justify-end">
-                <button className="hover:text-purple-900 focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
-                  </svg>
-                </button>
-
-                <button className="hover:text-purple-900 focus:outline-none ml-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
-                    <line x1="10" y1="14" x2="20" y2="4" />
-                    <polyline points="15 4 20 4 20 9" />
-                  </svg>
-                </button>
-              </section>
-
-              <section className="flex flex-col pt-6 p-2">
-                <div>
-                  <h5 className="text-2xl font-bold mb-10 name-grey leading-none">
-                    Form to sheet
-                  </h5>
-                  <div className="mb-4 h-20 name-grey">
-                    <p>
-                      A single page application that practically submits formatted form data to google sheets
-                    </p>
-                  </div>
-                  <footer className="text-xs sf-mono-font whatido-grey leading-none">Google script  Gatsby.js  Tailwind.css</footer>
-                </div>
-              </section>
-            </div>
-          </div>
-
-          <div className="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
-            <div className="work-blue-bg relative flex flex-col h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
-              <section className="flex justify-end">
-                <button className="hover:text-purple-900 focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
-                  </svg>
-                </button>
-
-                <button className="hover:text-purple-900 focus:outline-none ml-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
-                    <line x1="10" y1="14" x2="20" y2="4" />
-                    <polyline points="15 4 20 4 20 9" />
-                  </svg>
-                </button>
-              </section>
-
-              <section className="flex flex-col pt-6 p-2">
-                <div>
-                  <h5 className="text-2xl font-bold mb-10 name-grey leading-none">
-                    Lopschat
-                  </h5>
-                  <div className="mb-4 h-20 name-grey">
-                    <p>
-                      A chat application with emojis💪
-                    </p>
-                  </div>
-                  <footer className="text-xs sf-mono-font whatido-grey leading-none">React.js  Node.js Socket.io Material.css</footer>
-                </div>
-              </section>
-            </div>
-          </div>
-
-          <div className="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
-            <div className="work-blue-bg relative flex flex-col h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
-              <section className="flex justify-end">
-                <button className="anti-main-color-hover focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
-                  </svg>
-                </button>
-
-                <button className="anti-main-color-hover focus:outline-none ml-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
-                    <line x1="10" y1="14" x2="20" y2="4" />
-                    <polyline points="15 4 20 4 20 9" />
-                  </svg>
-                </button>
-              </section>
-
-              <section className="flex flex-col pt-6 p-2">
-                <div>
-                  <h5 className="text-2xl font-bold mb-10 name-grey leading-none">
-                    Bund
-                  </h5>
-                  <div className="mb-4 h-20 name-grey">
-                    <p>
-                      a CRM application 
-                    </p>
-                  </div>
-                  <footer className="text-xs sf-mono-font whatido-grey leading-none">Elixir  Phoenix  Vue.js Scss/Tailwind.css</footer>
-                </div>
-              </section>
-            </div>
-          </div>
+          
 
           {/* <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818"><title>External</title><g>
           <path d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728 c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04 C194.818,6.19,190.789,2.161,185.818,2.161z"></path>
