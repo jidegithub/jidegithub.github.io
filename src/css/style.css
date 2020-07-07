@@ -323,6 +323,12 @@ li.stack-item::before{
   .central-body{
     padding-top: 25%;
   }
+  .smx-mt-15{
+    margin-top:0.938rem;
+  }
+  .smx-pd-40{
+    padding: 1.5rem;
+  }
 }
 
 
