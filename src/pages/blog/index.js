@@ -10,11 +10,11 @@ export default function BlogIndexPage() {
         keywords={[`olutola`, `jide`, `olutolajide`, `michael`, `olutolamichael`, `blog`, `personal blog`, `olutola jides blog`, 'olutola jide\'s blog']}
         title="Blog"
       />
-        <section className="inverse-main">
+        <section className="">
           <div className="container mx-auto">
-            <h1 className="text-4xl font-sans font-bold ml-4 mt-8">
-              Latest Articles
-              </h1>
+            <h1 className="anti-main-color sf-mono-font text-5xl font-bold my-10">
+              Articles
+            </h1>
             <BlogRoll />
           </div>
         </section>

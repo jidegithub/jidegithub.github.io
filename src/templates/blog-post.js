@@ -28,7 +28,6 @@ export const BlogPostTemplate = ({
             </h1>
           </header>
          
-          {/* <p>{description}</p> */}
           <div className="mx-8 md:w-6/12 md:mx-auto">
             <PostContent content={content} className={""} />
 

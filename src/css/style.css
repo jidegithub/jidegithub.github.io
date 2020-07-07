@@ -20,6 +20,8 @@
   --light-grey: rgb(204, 214, 246);
   --dark-grey: rgb(136, 146, 176);
   --baby-subtle-blue: #89CFF0;
+  --color-mid: #8D9A87;
+  --color-dim: #596662;
 }
 html{
   scroll-behavior: smooth;
@@ -39,6 +41,12 @@ html{
 }
 .whatido-grey{
   color: var(--dark-grey);
+}
+.color-mid{
+  color: var(--color-mid);
+}
+.color-dim{
+  color: var(--color-dim);
 }
 .sf-mono-font{
   font-family: sfmono,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -75,9 +83,9 @@ html{
 .getintouch:hover, .getintouch:focus, .getintouch:active {
     background-color: rgba(100, 255, 218, 0.07);
 }
-a:hover, a:focus {
+/* a:hover, a:focus {
   color: rgb(100, 255, 218);
-}
+} */
 .getintouch {
   color: rgb(100, 255, 218);
   background-color: transparent;
@@ -150,11 +158,21 @@ li.stack-item::before{
   top:-9999px;
   left: -9999px;
 }
-
-
-
-
-
+/* .headernav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -1em;
+  padding: 0 .2em;
+  left: -.2em;
+  z-index: -1;
+  border-radius: 4px;
+  background-color: #1D78BD;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65);
+} */
 
 @-moz-keyframes rocket-movement { 100% {-moz-transform: translate(1200px,-600px);} }
 @-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(1200px,-600px); } }
@@ -294,15 +312,14 @@ li.stack-item::before{
   animation: glow-star 2s infinite ease-in-out alternate 9s;
 }
 
-@media only screen and (max-width: 640px){
-  ul.stack-listing {
+@media only screen and (max-width: 639px){
+  ul.stack-listing, .grid-mobile {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .box_astronaut{
     top: 70%;
   }
-    
   .central-body{
     padding-top: 25%;
   }

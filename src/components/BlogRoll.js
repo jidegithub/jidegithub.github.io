@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class BlogRoll extends React.Component {
   render() {
@@ -13,46 +12,27 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div key={post.id}>
-              <div className="max-w-sm overflow-hidden bg-white shadow-lg mx-auto h-full">
+              <div className="max-w-sm overflow-hidden mx-auto h-full">
                 <article>
-                  <header>
-                    {post.frontmatter.featuredimage ? (
-                      <div className="w-full">
-                        <PreviewCompatibleImage
-                          imageInfo={{
-                            image: post.frontmatter.featuredimage,
-                            alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                          }}
-                        />
-                      </div>
-                    ) : null}
-                  </header>
-
                   <div className="px-6 py-4 mt-2">
-                    <div className="font-bold text-xl mb-2 uppercase">
+                    <header className="font-bold name-grey text-xl mb-2 uppercase">
                       <Link
-                        className=""
                         to={post.fields.slug}
                       >
                         {post.frontmatter.title}
                       </Link>
-                    </div>
-                    <span className="py-3 mb-2">
+                    </header>
+                    <span className="color-dim py-3 mb-2">
                       {post.frontmatter.date}
                     </span>
-                    <p className="text-gray-700 text-base mt-2">
+                    <p className="whatido-grey text-base mt-2">
                       {post.excerpt}
                     </p>
                   </div>
                   <div className="my-3">
-                    <Link to={post.fields.slug} className="ml-6 bg-transparent hover:bg-blue-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent">
-                      Keep Reading →
+                    <Link to={post.fields.slug} className="ml-6 color-mid text-sm py-2 px-4">
+                      Read more →
                     </Link>
-                  </div>
-                  <div className="px-6 py-4">
-                    <span className="inline-block bg-gray-200  px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-                    <span className="inline-block bg-gray-200  px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-                    <span className="inline-block bg-gray-200  px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
                   </div>
                 </article>
               </div>
@@ -81,7 +61,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 120)
               id
               fields {
                 slug
@@ -91,13 +71,6 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 384, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
               }
             }
           }

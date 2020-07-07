@@ -11,7 +11,7 @@ function AboutPage() {
         title="About"
       />
       <section id="About" className="min-h-screen">
-        <h3 className="after-title-hr relative font-semibold anti-main-color sf-mono-font text-5xl flex items-center calibre-font mt-10">
+        <h3 className="after-title-hr relative font-semibold anti-main-color sf-mono-font text-5xl flex items-center mt-10">
           About Me
           </h3>
         <div className="whatido-grey calibre-font text-2xl">

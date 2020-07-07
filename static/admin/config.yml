@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: jidegithub/taurusview.com.ng
+  repo: jidegithub/portfolio
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
