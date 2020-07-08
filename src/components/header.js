@@ -46,7 +46,7 @@ function Header() {
             }
           ].map(link => (
             <Link
-              className="block sf-mono-font text-sm name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
+              className="block sf-mono-font text-base name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
               key={link.title}
               to={link.route}
               // activeClassName={`border-b-2`}
@@ -60,7 +60,7 @@ function Header() {
             Resume
           </button>
 
-          <div className=" ml-2 p-1 flex justify-end">
+          <div className=" ml-2 p-1 flex justify-end mt-2">
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
               <path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" />

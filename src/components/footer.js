@@ -2,17 +2,29 @@ import React from 'react'
 
 export default function footer() {
   return (
-    <footer className="sf-mono-font">
-      <nav className="flex justify-center max-w-4xl mx-auto p-4 md:p-8 text-sm">
+    <footer className="sf-mono-font name-grey">
+      <nav className="flex justify-center max-w-4xl mx-auto p-4 md:p-8 text-xs">
         <p>
-          <a
+          Copyright © 2020
+            <a
             className="no-underline whatido-grey"
             href="https://github.com/jidegithub"
-          >
-            Copyright © 2020.
-            Made with 💚 by jide.
-            Powered by Gatsby and Tailwind css
-          </a>
+            > jide.</a>
+            Powered by 
+            <a
+            className="no-underline whatido-grey"
+            href="https://www.gatsbyjs.org/"
+            > Gatsby,</a>
+            <a
+            className="no-underline whatido-grey"
+              href="https://tailwindcss.com/"
+            > Tailwind css </a> 
+             and
+            hosted on
+            <a
+            className="no-underline whatido-grey"
+            href="https://www.netlify.com/"
+            > Netlify</a>
         </p>
       </nav>
     </footer>

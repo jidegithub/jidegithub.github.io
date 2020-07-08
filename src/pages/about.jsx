@@ -11,7 +11,7 @@ function AboutPage() {
         title="About"
       />
       <section id="About" className="min-h-screen">
-        <h3 className="after-title-hr relative font-semibold anti-main-color sf-mono-font text-5xl flex items-center mt-10">
+        <h3 className="relative font-semibold anti-main-color sf-mono-font text-5xl flex items-center mt-6">
           About Me
           </h3>
         <div className="whatido-grey calibre-font text-2xl">
@@ -21,10 +21,10 @@ function AboutPage() {
             applications that pretty much follow this paradigm.
             My goal is to always build products that not only scale but
             deliver a performant experience to the end user.
-            </p>
+          </p>
           <p>
             My hobbies are studying, discovering new technologies, travelling, sightseeing, watching animes and playing video games.
-            </p>
+          </p>
           <div className="mt-2">
             <h3 className="text-3xl font-bold anti-main-color">Stack:</h3>
             <ul className="stack-listing md:text-2xl">

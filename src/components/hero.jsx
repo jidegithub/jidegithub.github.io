@@ -3,13 +3,14 @@ import React from 'react'
 export default function hero() {
   return (
     <section id="" className="min-h-screen">
-      <h3 className="anti-main-color sf-mono-font">Hi, my name is</h3>
+      {/* <h3 className="anti-main-color sf-mono-font">I am</h3> */}
       <div className="calibre-font font-semibold text-7xl my-4">
         <h2 className="name-grey leading-tight m-0 screen-reader-text">Michael Olajide Olutola</h2>
-        <h2 className="name-grey leading-tight m-0">Jide</h2>
+        <h2 className="name-grey leading-tight m-0">I am Jide,</h2>
         <div className="flex flex-wrap">
-          <h2 className="whatido-grey text-4xl leading-none m-0">Software Developer/</h2>
-          <h2 className="whatido-grey text-4xl leading-none m-0">Technical Writer/</h2>
+          <h2 className="whatido-grey text-4xl leading-none m-0">a Software Developer,&nbsp;</h2>
+          <h2 className="whatido-grey text-4xl leading-none m-0">Technical Writer,&nbsp;</h2>
+          <h2 className="whatido-grey text-4xl leading-none m-0">and&nbsp;</h2>
           <h2 className="whatido-grey text-4xl leading-none m-0">Open source contributor.</h2>
         </div>
       </div>
