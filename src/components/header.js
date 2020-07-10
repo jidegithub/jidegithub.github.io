@@ -1,8 +1,13 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+// import { default as ScrollMagic } from 'scrollmagic';
+import { TimelineMax as Timeline, TweenMax as Tween, Power3 } from 'gsap';
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
+  let navElement = useRef(null);
+  
+  let tl = new Timeline()
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -13,8 +18,18 @@ function Header() {
     }
   `);
 
+  useEffect(() => {
+    Tween.to(navElement, 0, {className: "visible"})
+      tl.staggerFrom(navElement, .6, {
+        y: -60, 
+        ease: Power3.easeOut,
+        delay: .3
+      },.2)
+    // console.log(navElement);
+  }, []);
+
   return (
-    <header className="">
+    <header className="invisible">
       <div className="flex flex-wrap justify-between mx-auto smx-pd-40 sm:p-8 p-4 md:p-8">
         <Link className="flex smx-mt-15 lg:mt-0 md:mt-0 sm:mt-4 no-underline text-white" to="/">
           <span className="font-bold text-xl tracking-tight">
@@ -26,6 +41,7 @@ function Header() {
           className={`${
             isExpanded ? `block` : ``
             } md:block md:flex md:w-auto`}
+          ref={element => { navElement = element }}
         >
           {[
             {

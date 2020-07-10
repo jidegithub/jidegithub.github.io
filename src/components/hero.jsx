@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { TimelineLite, TweenMax as Tween, Power3 } from 'gsap';
 
 export default function hero() {
+  let content = useRef(null);
+  let tl = new TimelineLite();
+
+  useEffect(() => {
+    let name = content.children[0].children[1];
+    let profession = content.children[0].children[2];
+    let aboutMeMini = content.children[0].nextSibling;
+    let mailButton = aboutMeMini.nextSibling;
+
+      Tween.to(content, 0, { className: "visible" })
+      tl.staggerFrom([name, profession.children, aboutMeMini.children, mailButton.children], 1, {
+        y: 44,
+        ease: Power3.easeOut,
+        delay: .3
+      }, .15)
+      // console.log(name, profession, aboutMeMini, mailButton);
+  }, []);
+
   return (
-    <section id="" className="min-h-screen">
-      {/* <h3 className="anti-main-color sf-mono-font">I am</h3> */}
+    <section ref={element => { content = element }} id="" className="invisible min-h-screen">
       <div className="calibre-font font-semibold text-7xl my-4">
         <h2 className="name-grey leading-tight m-0 screen-reader-text">Michael Olajide Olutola</h2>
         <h2 className="name-grey leading-tight m-0">I am Jide,</h2>
@@ -35,5 +53,6 @@ export default function hero() {
         </a> */}
       </div>
     </section>
+    
   )
 }

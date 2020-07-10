@@ -15,7 +15,8 @@
 }
 
 :root{
-  --main-bg-color: rgb(10, 25, 47);
+  /* --main-bg-color: rgb(10, 25, 47); */
+  --main-bg-color: #12171d;
   --turquiose: rgb(100, 255, 218);
   --light-grey: rgb(204, 214, 246);
   --dark-grey: rgb(136, 146, 176);
