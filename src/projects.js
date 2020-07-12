@@ -1,9 +1,9 @@
 export const projects = [
   {
-    name:"Car pool",
+    name:"Scapula",
     description: "A web app for renting vehicles when in a new country.",
-    link: "https://carpool.netlify.com",
-    github: "https://github.com/",
+    link: "https://scapula.netlify.com",
+    github: "https://github.com/jidegithub/scapula",
     stack: [
       "Vue", "Express.js", "Node.js", "Tailwind.css"
     ]
@@ -21,7 +21,7 @@ export const projects = [
     name: "Lopschat",
     description: "A chat application with emojis💪",
     link: "https://lopschat.netlify.com",
-    github: "https://github.com/",
+    github: "https://github.com/jidegithub/lopschat",
     stack: [
       "Gatsby.js", "Socket.io", "Node.js", "Tailwind.css"
     ]
@@ -29,8 +29,8 @@ export const projects = [
   {
     name: "Bund",
     description: "a CRM application ",
-    link: "https://bund.netlify.com",
-    github: "https://github.com/",
+    link: "",
+    github: "",
     stack: [
       "Elixir", "Aws", "Phoenix",  "Vue.js", "Scss", "Tailwind.css"
     ]

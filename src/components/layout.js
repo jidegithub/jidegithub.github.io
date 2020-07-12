@@ -10,7 +10,7 @@ function Layout({ children }) {
       <Header />
       <div className="flex sm:mx-2 md:mx-20">
           <div className="w-full">
-            <main className="flex flex-col px-8 py-8 md:p-8 w-full">
+            <main className="flex flex-col p-8 md:p-8 w-full">
               {children}
             </main>
           </div>
