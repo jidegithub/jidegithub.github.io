@@ -29,7 +29,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="invisible">
+    <header className="">
       <div className="flex flex-wrap justify-between mx-auto smx-pd-40 sm:p-8 p-4 md:p-8">
         <Link className="flex smx-mt-15 lg:mt-0 md:mt-0 sm:mt-4 no-underline text-white" to="/">
           <span className="font-bold text-xl tracking-tight">
@@ -38,9 +38,7 @@ function Header() {
         </Link>
 
         <nav
-          className={`${
-            isExpanded ? `block` : ``
-            } md:block md:flex md:w-auto`}
+          className="invisible md:block md:flex md:w-auto"
           ref={element => { navElement = element }}
         >
           {[
