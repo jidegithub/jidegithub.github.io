@@ -1,33 +1,33 @@
 export const projects = [
   {
-    name:"Scapula",
-    description: "A web app for renting vehicles when in a new country.",
-    link: "https://scapula.netlify.com",
-    github: "https://github.com/jidegithub/scapula",
+    name:"Scapular",
+    description: "A web app for renting vehicles.",
+    link: "https://scapular.netlify.com",
+    github: "https://github.com/jidegithub/scapular.git",
     stack: [
-      "Vue", "Express.js", "Node.js", "Tailwind.css"
+      "Vue.js", "Express.js", "Node.js", "Tailwind.css", "MongoDB"
     ]
   },
   {
-    name: "Form to sheet",
-    description: "A single page application form that submits form data to google sheets.",
-    link: "https://formtosheet.netlify.com",
-    github: "https://github.com/",
+    name: "Radius",
+    description: "A single page application for customer management.",
+    link: "https://radiuss.netlify.app/",
+    github: "https://github.com/jidegithub/radius.git",
     stack: [
-      "Google-script" ,"Gatsby.js", "Tailwind.css"
+      "Vue.js" ,"Bootstrap.css", "Express.js", "Node.js, MongoDB"
     ]
   },
   {
     name: "Lopschat",
     description: "A chat application with emojis💪",
     link: "https://lopschat.netlify.com",
-    github: "https://github.com/jidegithub/lopschat",
+    github: "https://github.com/jidegithub/lopschat.git",
     stack: [
       "Gatsby.js", "Socket.io", "Node.js", "Tailwind.css"
     ]
   },
   {
-    name: "Bund",
+    name: "Bund, coming soon...",
     description: "a CRM application ",
     link: "",
     github: "",
