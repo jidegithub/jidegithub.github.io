@@ -10,7 +10,6 @@ export default function footer() {
             <span className="text-black uppercase font-semibold inline-block">
               <h4>©<span id="year">2020</span>, Olajide Olutola</h4>
             </span>· 
-            {/* <a href="https://ernestojeh.com/feed.xml" className="text-gray-700">RSS</a> */}
             <p className="text-gray-700">This site was built with <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener" className="text-teal-800">Gatsby </a>
              &amp; <a href="https://tailwindcss.com" target="_blank" rel="noopener" className="text-teal-800">Tailwind</a>
              . It’s hosted on <a href="https://github.com/jidegithub" target="_blank" rel="noopener" className="text-teal-800">
@@ -47,7 +46,7 @@ export default function footer() {
           <div className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-2">
             <ul className="text-gray-700 text-lg">
               <li className="uppercase text-black text-base mb-1 font-semibold"><h4>Projects</h4></li>
-              <li><a href="" className="block py-1">Scapula</a></li>
+              <li><a href="http://scapular.netlify.app" target="_blank" rel="noopener"className="block py-1">Scapular</a></li>
               <li><a href="" className="block py-1">Bund</a></li>
             </ul>
           </div>

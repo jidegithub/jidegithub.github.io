@@ -74,7 +74,7 @@ function Header() {
             Resume
           </button>
 
-          <div className=" ml-2 p-1 flex justify-end mt-2">
+          {/* <div className=" ml-2 p-1 flex justify-end mt-2">
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
               <path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" />
@@ -85,7 +85,7 @@ function Header() {
               <circle cx="12" cy="12" r="4" />
               <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
             </svg>
-          </div>
+          </div> */}
         </nav>
       </div>
     </header>

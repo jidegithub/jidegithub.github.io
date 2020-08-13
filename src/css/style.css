@@ -76,36 +76,14 @@ html{
   background-color: var(--main-bg-color);
 }
 .text-7xl {
-  font-size: 5rem;
-}
-.text-xxl{
-  font-size: 1.3rem;
+  font-size: 4.5rem;
 }
 .getintouch:hover, .getintouch:focus, .getintouch:active {
-    background-color: rgba(100, 255, 218, 0.07);
+  background-color: rgba(100, 255, 218, 0.07);
 }
-/* a:hover, a:focus {
-  color: rgb(100, 255, 218);
-} */
-.getintouch {
-  color: rgb(100, 255, 218);
-  background-color: transparent;
-  font-size: 14px;
-  font-family: "sfmono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-  line-height: 1;
-  cursor: pointer;
-  margin-top: 50px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(100, 255, 218);
-  border-image: initial;
-  border-radius: 3px;
-  padding: 1.25rem 1.75rem;
-  text-decoration: none;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-}
+
 .tweet {
-  color: rgb(100, 255, 218);
+  color: var(--turquiose);
   background-color: transparent;
   font-size: 14px;
   font-family: "sfmono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
@@ -113,22 +91,12 @@ html{
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(100, 255, 218);
+  border-color: var(--turquiose);
   border-image: initial;
   border-radius: 3px;
   padding: 6px 10px;
   text-decoration: none;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-}
-.after-title-hr::after {
-  content: "";
-  display: block;
-  height: 1px;
-  width: 300px;
-  background-color: rgb(48, 60, 85);
-  position: relative;
-  top: -5px;
-  margin-left: 20px;
 }
 ul.stack-listing {
   display: grid;
@@ -143,14 +111,14 @@ li.stack-item {
   margin-bottom: 10px;
   padding-left: 20px;
   font-family: "sfmono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-  font-size: 15px;
+  
   color: rgb(136, 146, 176);
 }
 li.stack-item::before{
   content: "▹";
   position: absolute;
   left: 0px;
-  color: rgb(100, 255, 218);
+  color: var(--turquiose);
   font-size: 15px;
   line-height: 19px;
 }
