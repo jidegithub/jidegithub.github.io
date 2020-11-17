@@ -9,11 +9,9 @@ export default function hero() {
   useEffect(() => {
     let name = content.children[0].children[1];
     let profession = content.children[0].children[2];
-    let aboutMeMini = content.children[0].nextSibling;
-    let mailButton = aboutMeMini.nextSibling;
-
+  
       Tween.to(content, 0, { className: "visible" })
-      tl.staggerFrom([name, profession.children, aboutMeMini.children, mailButton.children], 1, {
+      tl.staggerFrom([name, profession.children], 1, {
         y: 44,
         ease: Power3.easeOut,
         delay: .3
@@ -23,7 +21,7 @@ export default function hero() {
 
   return (
     <>
-    <div className="">
+    <div className="pb-40">
       <section ref={element => { content = element }} id="" className="invisible ">
         <div className="calibre-font font-semibold text-6xl my-4">
           <h2 className="name-grey leading-tight m-0 screen-reader-text">Michael Olajide Olutola</h2>
@@ -42,7 +40,7 @@ export default function hero() {
           </p>
         </div>
         <div className="name-grey mt-4">
-          <Link to="/about" className="flex text-2xl items-center">
+          <Link to="/about" className="flex text-2xl items-center font-medium">
             Read more about me
             <svg xmlns="http://www.w3.org/2000/svg" className="inline-block ml-1 icon icon-tabler icon-tabler-arrow-up-right-circle" width="34" height="34" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />

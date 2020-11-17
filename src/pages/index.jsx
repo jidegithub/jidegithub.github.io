@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ToProjectBlog from "../components/toProjectBlog.jsx";
 import GetInTouch from "../components/getInTouch.jsx";
+import FeaturedWork from "../components/FeaturedWork.jsx";
 
 function IndexPage() {
   return (
@@ -14,6 +15,7 @@ function IndexPage() {
         title="Home"
       />
       <Hero/>
+      <FeaturedWork/>
       <ToProjectBlog/>
       <GetInTouch/>
     </Layout>

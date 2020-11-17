@@ -1,17 +1,19 @@
 export const projects = [
   {
-    name:"Scapular",
-    description: "A web app for renting vehicles.",
-    link: "https://scapular.netlify.com",
-    github: "https://github.com/jidegithub/scapular.git",
+    name:"Toga Mobile",
+    description: "A Business Mobile Network.",
+    link: "https://togamobile.netlify.com",
+    image: "https://res.cloudinary.com/jidecloudy/image/upload/v1605633447/portfolio/toga_bqumi8.png",
+    github: "https://github.com/jidegithub/toga.git",
     stack: [
-      "Vue.js", "Express.js", "Node.js", "Tailwind.css", "MongoDB"
+      "Reactjs", "Tailwind.css"
     ]
   },
   {
     name: "Radius",
     description: "A single page application for customer management.",
     link: "https://radiuss.netlify.app/",
+    image: "",
     github: "https://github.com/jidegithub/radius.git",
     stack: [
       "Vue.js" ,"Bootstrap.css", "Express.js", "Node.js, MongoDB"
@@ -21,6 +23,7 @@ export const projects = [
     name: "Lopschat",
     description: "A chat application with emojis💪",
     link: "https://lopschat.netlify.com",
+    image: "",
     github: "https://github.com/jidegithub/lopschat.git",
     stack: [
       "Gatsby.js", "Socket.io", "Node.js", "Tailwind.css"
@@ -30,6 +33,7 @@ export const projects = [
     name: "Bund, coming soon...",
     description: "a CRM application ",
     link: "",
+    image: "",
     github: "",
     stack: [
       "Elixir", "Aws", "Phoenix",  "Vue.js", "Scss", "Tailwind.css"

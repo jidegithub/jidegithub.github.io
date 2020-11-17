@@ -29,7 +29,7 @@ export default function work() {
                     </button>
                   </a>
                   
-                  <a href={project.link}>
+                  <a target="_blank" href={project.link}>
                     <button aria-label="external link" className="hover:text-purple-900 focus:outline-none ml-2">
                       <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" />
