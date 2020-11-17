@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { projects } from '../projects';
+import { Helmet } from 'react-helmet';
 
 export default function work() {
   console.log(projects)
@@ -11,6 +12,7 @@ export default function work() {
         keywords={[`olutola`, `jide`, `olutolajide`, `michael`, `olutolamichael`, `olutola olajide`, `olutola jide`]}
         title="Work"
       />
+      <Helmet title="work" />
       <section id="Work" className="w-full">
         <h3 className="anti-main-color sf-mono-font font-semibold text-5xl my-10">
           Projects & Work

@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import BlogRoll from '../../components/BlogRoll'
+import { Helmet } from 'react-helmet';
 
 export default function BlogIndexPage() {
   return (
@@ -10,6 +11,7 @@ export default function BlogIndexPage() {
         keywords={[`olutola`, `jide`, `olutolajide`, `michael`, `olutolamichael`, `blog`, `personal blog`, `olutola jides blog`, 'olutola jide\'s blog']}
         title="Blog"
       />
+      <Helmet title="blog" />
         <section className="">
           <div className="container mx-auto">
             <h1 className="anti-main-color sf-mono-font text-5xl font-bold my-10">

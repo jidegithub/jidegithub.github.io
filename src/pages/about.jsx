@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { Helmet } from 'react-helmet';
 
 function AboutPage() {
   return (
@@ -10,6 +11,7 @@ function AboutPage() {
         keywords={[`about olutola jide`, `olutola jide`, `olutola michael`, `about olutola michael`]}
         title="About"
       />
+      <Helmet title="about" />
       <section id="About" className="min-h-screen">
         <h3 className="relative font-semibold anti-main-color sf-mono-font text-5xl flex items-center mt-6">
           About
