@@ -42,12 +42,15 @@ function AboutPage() {
             <ul className="stack-listing">
               <li className="stack-item">Javascript (ES6+)</li>
               <li className="stack-item">Reactjs</li>
+              <li className="stack-item">Redux</li>
               <li className="stack-item">Vuejs</li>
+              <li className="stack-item">Vuex</li>
               <li className="stack-item">Node.js</li>
               <li className="stack-item">Express.js</li>
               <li className="stack-item">HTML&(S)CSS</li>
               <li className="stack-item">Elixir</li>
               <li className="stack-item">Phoenix</li>
+              <li className="stack-item">Docker</li>
               <li className="stack-item">Firebase</li>
               <li className="stack-item">Git/Github/Gitlab</li>
             </ul>

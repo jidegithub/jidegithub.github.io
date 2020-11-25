@@ -35,7 +35,7 @@ export default function hero() {
         </div>
         <div className="whatido-grey calibre-font max-w-xl mt-8">
           <p className="text-3xl">
-            i have over 3 years of experience building
+            i have over 2 years of experience building
             exceptional web, mobile, business and enterprise applications.
           </p>
         </div>
