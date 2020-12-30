@@ -1,13 +1,10 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
-import React, { useState, useEffect, useRef } from "react";
-// import { default as ScrollMagic } from 'scrollmagic';
-import { TimelineMax as Timeline, TweenMax as Tween, Power3 } from 'gsap';
+import React, { useState } from "react";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
-  let navElement = useRef(null);
+  // let navElement = useRef(null);
   
-  let tl = new Timeline()
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -18,28 +15,18 @@ function Header() {
     }
   `);
 
-  useEffect(() => {
-    Tween.to(navElement, 0, {className: "visible"})
-      tl.staggerFrom(navElement, .6, {
-        y: -60, 
-        ease: Power3.easeOut,
-        delay: .3
-      },.2)
-    // console.log(navElement);
-  }, []);
-
   return (
-    <header className="">
-      <div className="flex flex-wrap justify-between mx-auto smx-pd-40 sm:p-8 p-4 md:p-8">
-        <Link className="flex smx-mt-15 lg:mt-0 md:mt-0 sm:mt-4 no-underline text-white" to="/">
+    <header className="w-full bg-gray-700 fixed z-50">
+      <div className="flex justify-between mx-auto smx-pd-40 sm:p-8 smx-flex-col p-4 md:p-8">
+        <Link className="flex smx-mt-15 smx-mb-4 lg:mt-0 md:mt-0 sm:mt-4 no-underline text-white" to="/">
           <span className="font-bold text-xl tracking-tight">
             {site.siteMetadata.title}
           </span>
         </Link>
 
         <nav
-          className="invisible md:block md:flex md:w-auto"
-          ref={element => { navElement = element }}
+          className="md:block md:flex sm:block md:w-auto"
+          // ref={element => { navElement = element }}
         >
           {[
             {
@@ -60,7 +47,7 @@ function Header() {
             }
           ].map(link => (
             <Link
-              className="block sf-mono-font text-base name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
+              className="sf-mono-font text-base name-grey anti-main-color-hover mt-4 md:mt-0 md:ml-6 sm:ml-6 smx-ml-40 no-underline text-white"
               key={link.title}
               to={link.route}
               // activeClassName={`border-b-2`}
@@ -69,7 +56,7 @@ function Header() {
             </Link>
           ))}
           <button
-            className="py-2 px-4 btn tweet sf-mono-font text-sm name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 text-white"
+            className="py-2 px-4 btn tweet sf-mono-font text-sm name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 sm:ml-6 smx-ml-40 text-white"
           >
             Resume
           </button>

@@ -13,7 +13,7 @@ export default function work() {
         title="Work"
       />
       <Helmet title="work" />
-      <section id="Work" className="w-full">
+      <section id="Work" className="w-full mt-40">
         <h3 className="anti-main-color sf-mono-font font-semibold text-5xl my-10">
           Projects & Work
         </h3>
