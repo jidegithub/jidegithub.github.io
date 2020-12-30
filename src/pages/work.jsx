@@ -5,7 +5,7 @@ import { projects } from '../projects';
 import { Helmet } from 'react-helmet';
 
 export default function work() {
-  console.log(projects)
+  // console.log(projects)
   return (
     <Layout>
       <SEO
