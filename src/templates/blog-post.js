@@ -17,7 +17,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="bg-white">
+    <section className="bg-white mt-40">
       {helmet || ''}
           <header className="w-11/12 mx-auto mt-8">
             <Link to={"/blog"}>

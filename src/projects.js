@@ -30,13 +30,13 @@ export const projects = [
     ]
   },
   {
-    name: "Bund, coming soon...",
-    description: "a CRM application ",
+    name: "Bund",
+    description: "a CRM application, coming soon... ",
     link: "",
     image: "",
     github: "",
     stack: [
-      "Elixir", "Aws", "Phoenix",  "Vue.js", "Scss", "Tailwind.css"
+      "AWS", "Phoenix",  "Vue.js", "Scss", "Tailwind.css"
     ]
   },
 

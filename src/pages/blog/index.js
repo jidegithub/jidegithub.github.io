@@ -12,7 +12,7 @@ export default function BlogIndexPage() {
         title="Blog"
       />
       <Helmet title="blog" />
-        <section className="">
+        <section className="mt-40">
           <div className="container mx-auto">
             <h1 className="anti-main-color sf-mono-font text-5xl font-bold my-10">
               Articles
