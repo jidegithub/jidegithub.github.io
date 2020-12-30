@@ -46,7 +46,7 @@ export default function footer() {
           <div className="col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-2">
             <ul className="text-gray-700 text-lg">
               <li className="uppercase text-black text-base mb-1 font-semibold"><h4>Projects</h4></li>
-              <li><a href="http://scapular.netlify.app" target="_blank" rel="noopener"className="block py-1">Scapular</a></li>
+              <li><a href="http://togamobile.netlify.app" target="_blank" rel="noopener"className="block py-1">Toga Mobile</a></li>
               <li><a href="" className="block py-1">Bund</a></li>
             </ul>
           </div>

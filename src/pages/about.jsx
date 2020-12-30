@@ -11,7 +11,7 @@ function AboutPage() {
         keywords={[`about olutola jide`, `olutola jide`, `olutola michael`, `about olutola michael`]}
         title="About"
       />
-      <Helmet title="about" />
+      <Helmet title="About - Olutola Olajide | Software Developer" />
       <section id="About" className="min-h-screen mt-40">
         <h3 className="relative font-semibold anti-main-color sf-mono-font text-5xl flex items-center mt-6">
           About

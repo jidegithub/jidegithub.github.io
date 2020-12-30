@@ -11,7 +11,7 @@ export default function BlogIndexPage() {
         keywords={[`olutola`, `jide`, `olutolajide`, `michael`, `olutolamichael`, `blog`, `personal blog`, `olutola jides blog`, 'olutola jide\'s blog']}
         title="Blog"
       />
-      <Helmet title="blog" />
+      <Helmet title="Blog - Olutola Olajide | Software Developer" />
         <section className="mt-40">
           <div className="container mx-auto">
             <h1 className="anti-main-color sf-mono-font text-5xl font-bold my-10">

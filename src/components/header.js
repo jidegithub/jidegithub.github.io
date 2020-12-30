@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <header className="w-full fixed z-50">
-      <div className="flex justify-between mx-auto smx-pd-40 sm:p-8 smx-flex-col p-4 md:p-8">
+      <div className="flex justify-between smx-pd-40 sm:p-8 smx-flex-col p-4 md:p-8 mx-20">
         <Link className="flex smx-mt-15 smx-mb-4 lg:mt-0 md:mt-0 sm:mt-4 no-underline text-white" to="/">
           <span className="font-bold text-xl tracking-tight">
             {site.siteMetadata.title}
@@ -38,7 +38,7 @@ function Header() {
               title: `About`
             },
             {
-              route: `work`,
+              route: `/work`,
               title: `Work`
             },
             {

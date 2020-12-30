@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `🚀 jide`,
-    description: `olutola olajide michael portfolio`,
+    description: `Personal website of Olutola Olajide Michael. Software Developer and Technical Writer.`,
     author: `@jidesnr`
   },
   plugins: [

@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { Helmet } from 'react-helmet';
 import fourOfour from "../images/404.svg";
 import rocket from "../images/rocket.svg";
 import earth from "../images/earth.svg";
@@ -12,6 +13,7 @@ function NotFoundPage() {
   return (
     <Layout>
       <SEO title="404: Not found" />
+      <Helmet title="404 - Olutola Olajide | Software Developer" />
       <section className="mb-20">
         <div className="stars">
           <div className="flex items-center justify-center">
