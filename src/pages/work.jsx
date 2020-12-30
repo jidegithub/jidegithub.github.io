@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { projects } from '../projects';
+import projects  from '../projects.json';
 import { Helmet } from 'react-helmet';
 
 export default function work() {
