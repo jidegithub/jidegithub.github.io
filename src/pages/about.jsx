@@ -20,11 +20,11 @@ function AboutPage() {
           <section>
             <p className="mt-2">
               I am a software developer based in Lagos, Nigeria. 
-              I work at Lopworks, Nigeria with some of 
-              the most talented folks I've ever met, shipping solutions to make 
-              it easier for people to work smart and yield effective solutions to solve business problems.
-              Ultimately, i aim to build products that not only scale but
-              deliver a performant solution to the end user.
+              I currently work at Lopworks, Nigeria — An IT solutions company with some of 
+              the most talented folks I've ever met, shipping software solutions to make 
+              it easier for people to work smart and solve business challenges.
+              Ultimately, i aim to build products that not only scales but also
+              deliver an amazing experience to the end user.
             </p>
             <p>
               I enjoy studying, travelling, sightseeing, watching animes and playing video games.
@@ -32,7 +32,7 @@ function AboutPage() {
           </section>
           <section>
             <p className="mt-2">
-              Before joining Lopworks Nigeria, I interned at Lopworks, Nigeria — An IT solutions company in Nigeria, mainly focused on building out the Project Management solution of the company, and prior to that I interned at Stutern - An internet company that connects interns with employers of labour in West Africa.
+              Before joining Lopworks Nigeria, I interned at Lopworks, Nigeria. I mainly focused on building out the Project Management solution of the company, and prior to that I interned at Stutern - An internet company that connects interns with employers of labour in West Africa.
             </p>
           </section>
         </div>
