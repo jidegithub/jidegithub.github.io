@@ -19,7 +19,7 @@ function AboutPage() {
         <div className="whatido-grey calibre-font text-3xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
           <section>
             <p className="mt-2">
-              I am a software developer based in Lagos, Nigeria. 
+              I am a software Engineer based in Lagos, Nigeria. 
               I currently work at Lopworks, Nigeria — An IT solutions company with some of 
               the most talented folks I've ever met, shipping software solutions to make 
               it easier for people to work smart and solve business challenges.

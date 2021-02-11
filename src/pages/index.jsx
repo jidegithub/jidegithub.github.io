@@ -16,7 +16,7 @@ function IndexPage() {
         keywords={[`olutola`, `jide`, `olutola jide`, `michael`, `olutola michael`, `olutola michael olajide`]}
         title="Home"
       />
-      <Helmet title="Olutola Olajide | Software Developer"/>
+      <Helmet title="Olutola Olajide | Software Engineer"/>
       <Hero/>
       <FeaturedWork/>
       <ToProjectBlog/>

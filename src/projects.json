@@ -31,12 +31,22 @@
   },
   {
     "name": "Bund",
-    "description": "a CRM application, coming soon... ",
+    "description": "a CRM application",
     "link": "",
     "image": "",
     "github": "",
     "stack": [
       "AWS", "Phoenix",  "Vue.js", "Scss", "Tailwind.css"
+    ]
+  },
+  {
+    "name": "ChaseErp",
+    "description": "a Payroll and Employee Management software",
+    "link": "",
+    "image": "",
+    "github": "",
+    "stack": [
+      "Elixir", "Phoenix",  "Vue.js", "Scss", "Tailwind.css"
     ]
   }
 ]

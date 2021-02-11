@@ -14,7 +14,7 @@ export default function hero() {
           <h2 className="name-grey leading-tight m-0 screen-reader-text">Michael Olajide Olutola</h2>
           <h2 className="name-grey leading-tight m-0">I am Jide,</h2>
           <div className="flex flex-wrap">
-            <h2 className="whatido-grey leading-none m-0">Software Developer,&nbsp;</h2>
+            <h2 className="whatido-grey leading-none m-0">Software Engineer,&nbsp;</h2>
             <h2 className="whatido-grey leading-none m-0">and&nbsp;</h2>
             <h2 className="whatido-grey leading-none m-0">Technical Writer</h2>
           </div>
