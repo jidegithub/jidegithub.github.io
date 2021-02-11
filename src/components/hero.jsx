@@ -12,7 +12,7 @@ export default function hero() {
       >
         <div className="calibre-font font-semibold text-6xl my-4">
           <h2 className="name-grey leading-tight m-0 screen-reader-text">Michael Olajide Olutola</h2>
-          <h2 className="name-grey leading-tight m-0">I am Jide,</h2>
+          <h2 className="name-grey leading-tight m-0">I am Olajide,</h2>
           <div className="flex flex-wrap">
             <h2 className="whatido-grey leading-none m-0">Software Engineer,&nbsp;</h2>
             <h2 className="whatido-grey leading-none m-0">and&nbsp;</h2>
