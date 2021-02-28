@@ -10,6 +10,10 @@ tags:
   - linux
   - cli
 ---
+![terminal](/img/twarren_bashmacos_1.0.webp "mac terminal")
+
+
+
 As part of my journey towards the Cloud, I have had to come to terms that Linux kernel Commands plays a very important role in my journey towards being a Cloud Engineer.
 
 As a Cloud Engineer, it’s recommended to use a command-line interface (CLI) than the Cloud Providers portal because it’s more powerful and effective. Tasks that require a multi-step process through GUI can be done in a matter of seconds by typing commands into the CLI.
