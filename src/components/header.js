@@ -40,10 +40,6 @@ function Header() {
             {
               route: `/work`,
               title: `Work`
-            },
-            {
-              route: `/blog`,
-              title: `Blog`
             }
           ].map(link => (
             <Link
@@ -55,6 +51,11 @@ function Header() {
               {link.title}
             </Link>
           ))}
+          <a
+            className="sf-mono-font text-base name-grey anti-main-color-hover mt-4 md:mt-0 md:ml-6 sm:ml-6 smx-ml-40 no-underline text-white"
+            href="https://jideolutola.hashnode.dev/" target="_blank"          >
+            Blog
+          </a>
           <button
             className="py-2 px-4 btn tweet sf-mono-font text-sm name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 sm:ml-6 smx-ml-40 text-white"
           >

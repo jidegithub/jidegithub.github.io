@@ -12,7 +12,7 @@ export default function work() {
         keywords={[`olutola`, `jide`, `olutolajide`, `michael`, `olutolamichael`, `olutola olajide`, `olutola jide`]}
         title="Work"
       />
-      <Helmet title="Work - Olutola Olajide | Software Developer" />
+      <Helmet title="Work - Olutola Olajide &bull; Software Developer" />
       <section id="Work" className="w-full mt-40">
         <h3 className="anti-main-color sf-mono-font font-semibold text-5xl my-10">
           Projects & Work

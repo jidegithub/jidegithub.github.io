@@ -11,7 +11,7 @@ function AboutPage() {
         keywords={[`about olutola jide`, `olutola jide`, `olutola michael`, `about olutola michael`]}
         title="About"
       />
-      <Helmet title="About - Olutola Olajide | Software Developer" />
+      <Helmet title="About - Olutola Olajide &bull; Software Developer" />
       <section id="About" className="min-h-screen mt-40">
         <h3 className="relative font-semibold anti-main-color sf-mono-font text-5xl flex items-center mt-6">
           About
@@ -40,19 +40,14 @@ function AboutPage() {
           <div className="mt-2">
             <h3 className="text-4xl font-bold anti-main-color">Stack:</h3>
             <ul className="stack-listing">
-              <li className="stack-item">Javascript (ES6+)</li>
-              <li className="stack-item">Reactjs</li>
+              <li className="stack-item">Javascript (React.js/Vue.js)</li>
               <li className="stack-item">Redux</li>
-              <li className="stack-item">Vuejs</li>
               <li className="stack-item">Vuex</li>
-              <li className="stack-item">Node.js</li>
-              <li className="stack-item">Express.js</li>
-              <li className="stack-item">HTML&(S)CSS</li>
-              <li className="stack-item">Elixir</li>
-              <li className="stack-item">Phoenix</li>
+              <li className="stack-item">Node.js(Express.js)</li>
+              <li className="stack-item">Elixir (Phoenix/Ecto)</li>
               <li className="stack-item">Docker</li>
+              <li className="stack-item">Azure</li>
               <li className="stack-item">Firebase</li>
-              <li className="stack-item">Git/Github/Gitlab</li>
             </ul>
           </div>
         </div>
