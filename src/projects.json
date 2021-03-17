@@ -30,13 +30,13 @@
     ]
   },
   {
-    "name": "Bund",
-    "description": "a CRM application",
-    "link": "",
+    "name": "Shark",
+    "description": "a Dockerized Express application",
+    "link": "https://polar-eyrie-00019.herokuapp.com/",
     "image": "",
-    "github": "",
+    "github": "https://github.com/jidegithub/node-docker.git",
     "stack": [
-      "AWS", "Phoenix",  "Vue.js", "Scss", "Tailwind.css"
+      "Docker", "Heroku", "Node.js", "Express.js", "CSS"
     ]
   },
   {
