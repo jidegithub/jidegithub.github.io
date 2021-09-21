@@ -3,12 +3,12 @@ import { Link } from 'gatsby';
 
 export default function footer() {
   return (
-    <footer className="bg-gray-300 py-16 sm:py-16 md:py-20 lg:py-24 border-t border-gray-300">
+    <footer className="bg-gray-100 py-4 lg:py-24 border-t border-gray-300">
       <div className="container mx-auto px-4">
         <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-12 lg:grid-cols-12">
           <div className="col-span-2 sm:col-span-6 md:col-span-5 lg:col-span-4 mb-4">
             <span className="text-black uppercase font-semibold inline-block">
-              <h4>©<span id="year">2020</span>, Olajide Olutola</h4>
+              <h4>©<span id="year">2021</span>, Olajide Olutola</h4>
             </span>· 
             <p className="text-gray-700">This site was built with <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener" className="text-teal-800">Gatsby </a>
              &amp; <a href="https://tailwindcss.com" target="_blank" rel="noopener" className="text-teal-800">Tailwind</a>
@@ -26,9 +26,8 @@ export default function footer() {
                   Home
                 </Link>
               </li>
-              <li><Link to="/work" className="block py-1">Work</Link></li>
-              <li><Link to="/about" className="block py-1">About</Link></li>
-              <li><Link to="/blog" className="block py-1">Blog</Link></li>
+              <li><Link to="/work" className="block py-1">Portfolio</Link></li>
+              <li><a href="https://jideolutola.hashnode.dev/" className="block py-1">Blog</a></li>
               <li><a href="mailto:olutolajide@gmail.com" className="block py-1">Contact</a></li>
             </ul>
           </div>
@@ -47,7 +46,6 @@ export default function footer() {
             <ul className="text-gray-700 text-lg">
               <li className="uppercase text-black text-base mb-1 font-semibold"><h4>Projects</h4></li>
               <li><a href="http://togamobile.netlify.app" target="_blank" rel="noopener"className="block py-1">Toga Mobile</a></li>
-              <li><a href="" className="block py-1">Bund</a></li>
             </ul>
           </div>
         </div>

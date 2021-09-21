@@ -21,13 +21,13 @@ export default function hero() {
         </div>
         <div className="whatido-grey calibre-font max-w-xl mt-8">
           <p className="text-3xl">
-            i have over 2 years of experience building
-            exceptional web, mobile, business and enterprise applications.
+            I have over 2 years of experience building meaningful
+            products that help people experience everyday life, not endure it..
           </p>
         </div>
         <div className="name-grey mt-4">
-          <Link to="/about" className="flex text-2xl items-center font-medium">
-            Read more about me
+          <Link to="/work" className="flex text-2xl items-center font-medium">
+            View Projects
             <svg xmlns="http://www.w3.org/2000/svg" className="inline-block ml-1 icon icon-tabler icon-tabler-arrow-up-right-circle" width="34" height="34" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
               <circle cx="12" cy="12" r="9" />

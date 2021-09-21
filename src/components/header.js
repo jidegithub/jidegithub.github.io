@@ -34,19 +34,15 @@ function Header() {
               title: `Home`
             },
             {
-              route: `/about`,
-              title: `About`
-            },
-            {
               route: `/work`,
-              title: `Work`
+              title: `Portfolio`
             }
           ].map(link => (
             <Link
               className="sf-mono-font text-base name-grey anti-main-color-hover mt-4 md:mt-0 md:ml-6 sm:ml-6 smx-ml-40 no-underline text-white"
               key={link.title}
               to={link.route}
-              // activeClassName={`border-b-2`}
+              activeClassName={`border-b-2`}
             >
               {link.title}
             </Link>
@@ -56,11 +52,6 @@ function Header() {
             href="https://jideolutola.hashnode.dev/" target="_blank"          >
             Blog
           </a>
-          <button
-            className="py-2 px-4 btn tweet sf-mono-font text-sm name-grey anti-main-color-hover md:inline-block mt-4 md:mt-0 md:ml-6 sm:ml-6 smx-ml-40 text-white"
-          >
-            Resume
-          </button>
 
           {/* <div className=" ml-2 p-1 flex justify-end mt-2">
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">

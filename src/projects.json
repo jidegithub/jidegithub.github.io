@@ -48,5 +48,25 @@
     "stack": [
       "Elixir", "Phoenix",  "Vue.js", "Scss", "Tailwind.css"
     ]
+  },
+  {
+    "name": "Pixel Chef",
+    "description": "Creative Agency",
+    "link": "https://pixelchef.netlify.app/",
+    "image": "https://res.cloudinary.com/jidecloudy/image/upload/v1632237124/portfolio/pixelchef.netlify.app__holtcg.png",
+    "github": "",
+    "stack": [
+      "React", "Framer Motion"
+    ]
+  },
+  {
+    "name": "Heatrow",
+    "description": "Estate Management software",
+    "link": "https://heatrow.vercel.app/",
+    "image": "https://res.cloudinary.com/jidecloudy/image/upload/v1632237127/portfolio/heatrow.vercel.app__1_qnpr5l.png",
+    "github": "",
+    "stack": [
+      "Nextjs", "Framer Motion", "Locomotive Scroll"
+    ]
   }
 ]

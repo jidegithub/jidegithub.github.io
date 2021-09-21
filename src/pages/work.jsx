@@ -5,21 +5,23 @@ import projects  from '../projects.json';
 import { Helmet } from 'react-helmet';
 
 export default function work() {
-  // console.log(projects)
   return (
     <Layout>
       <SEO
         keywords={[`olutola`, `jide`, `olutolajide`, `michael`, `olutolamichael`, `olutola olajide`, `olutola jide`]}
-        title="Work"
+        title="Projects 📚"
       />
-      <Helmet title="Work - Olutola Olajide &bull; Software Developer" />
+      <Helmet title="Projects 📚 - Olutola Olajide &bull; Software Developer" />
       <section id="Work" className="w-full mt-40">
         <h3 className="anti-main-color sf-mono-font font-semibold text-5xl my-10">
-          Projects & Work
+          Projects 📚
         </h3>
-        <div className="container ml-auto mr-auto flex flex-wrap items-start">
+        <h4 className="name-grey sf-mono-font font-semibold text-2xl my-10">
+          Each project is unique. Here are some of my works.
+        </h4>
+        <div className="container mr-auto flex flex-wrap items-start">
           {projects.map(project => (
-            <div className="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2" key={project.name}>
+            <div className="w-full xs:p-0 md:w-1/2 lg:w-1/3 pl-3 pr-3 mb-5 lg:pl-2 lg:pr-2 " key={project.name}>
               <div className="work-blue-bg relative flex flex-col h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                 <section className="flex justify-end">
                   <a href={project.github}>
@@ -43,7 +45,7 @@ export default function work() {
                   </a>  
                 </section>
 
-                <section className="flex flex-col pt-6 p-2">
+                <section className="flex flex-col pt-2 p-2">
                   <div>
                     <h5 className="text-2xl font-bold md:mb-6 sm:mb-4 mb-10 name-grey leading-none">
                       {project.name}
