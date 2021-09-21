@@ -7,14 +7,14 @@ module.exports = {
   plugins: [
     // "gatsby-plugin-eslint",
     `gatsby-plugin-react-helmet`,
-    {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static/img`,
-        name: 'img',
-      },
-    },
+    // {
+    //   // keep as first gatsby-source-filesystem plugin for gatsby image support
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     path: `${__dirname}/static/img`,
+    //     name: 'img',
+    //   },
+    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -22,13 +22,6 @@ module.exports = {
         name: 'pages',
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

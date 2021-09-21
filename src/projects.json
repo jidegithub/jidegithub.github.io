@@ -56,7 +56,7 @@
     "image": "https://res.cloudinary.com/jidecloudy/image/upload/v1632237124/portfolio/pixelchef.netlify.app__holtcg.png",
     "github": "",
     "stack": [
-      "React", "Framer Motion"
+      "React", "Framer-Motion"
     ]
   },
   {
@@ -66,7 +66,27 @@
     "image": "https://res.cloudinary.com/jidecloudy/image/upload/v1632237127/portfolio/heatrow.vercel.app__1_qnpr5l.png",
     "github": "",
     "stack": [
-      "Nextjs", "Framer Motion", "Locomotive Scroll"
+      "Nextjs", "Framer-Motion", "Locomotive-Scroll"
+    ]
+  },
+  {
+    "name": "Shortly",
+    "description": "a url shortening application",
+    "link": "https://optimistic-visvesvaraya-0ad920.netlify.app",
+    "image": "https://d33wubrfki0l68.cloudfront.net/613dda459b3eb411e02d743b/screenshot_2021-09-12-10-47-29-0000.png",
+    "github": "https://github.com/jidegithub/urly",
+    "stack": [
+      "React", "Tailwind.css"
+    ]
+  },
+  {
+    "name": "Serverless GraphQl",
+    "description": "a graphQL playground using netlify functions",
+    "link": "https://jidegithub-serverless-graphql.netlify.app/",
+    "image": "",
+    "github": "",
+    "stack": [
+      "GraphQl", "Netlify-Functions"
     ]
   }
 ]
