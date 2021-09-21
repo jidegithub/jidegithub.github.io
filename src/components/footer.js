@@ -46,6 +46,7 @@ export default function footer() {
             <ul className="text-gray-700 text-lg">
               <li className="uppercase text-black text-base mb-1 font-semibold"><h4>Projects</h4></li>
               <li><a href="http://togamobile.netlify.app" target="_blank" rel="noopener"className="block py-1">Toga Mobile</a></li>
+              <li><a href="https://jidegithub-serverless-graphql.netlify.app/" target="_blank" rel="noopener"className="block py-1">GraphQL serverless</a></li>
             </ul>
           </div>
         </div>
