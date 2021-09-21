@@ -19,7 +19,7 @@ export default function work() {
         <h4 className="name-grey sf-mono-font font-semibold text-2xl my-10">
           Each project is unique. Here are some of my works.
         </h4>
-        <div className="container mr-auto flex flex-wrap items-start">
+        <div className="mr-auto flex flex-wrap items-start">
           {projects.map(project => (
             <div className="w-full xs:p-0 md:w-1/2 lg:w-1/3 pl-3 pr-3 mb-5 lg:pl-2 lg:pr-2 " key={project.name}>
               <div className="work-blue-bg relative flex flex-col h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
